@@ -1,0 +1,81 @@
+<div>
+    <div class="row">
+        <div class=" col-md-2 ">
+            <div class="MENU">
+                <div class="sidenav">
+                    <button type="button" class="btn  btn-sm">&#9776; MENU</button>&nbsp;
+                    <ul>
+                        <li><a href="">2D DASHBOARD</a></li>
+                        <li> <button class="button" (click)="menuClicked('island')">KUSU Island</button></li>
+                </ul>
+                </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 container container-bg">
+            <!--Nav Bar-->
+            <nav class="navbar navbar-expand-mdbg-dark navbar-dark">
+                <div class="container container-header-width">
+                    <!--<div class="navbar-header"> -->
+                    <div style=" width: 100%; text-align: center; color: white; font-size: 28px;">
+                        <span>DE CONTAINERIZED DESALINATION SYSTEM</span>
+                    </div>
+                </div>
+            </nav>
+            <div class="field">
+                <h5>Product Water Quality</h5>
+            </div>
+            <!--ROW 1-->
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="assets\images\Conductivity.png" width="90%" height="100%">
+                </div>
+    
+                <div class="col-md-3">
+                    <img src="assets\images\Salinity.png" width="90%" height="100%">
+                </div>
+    
+                <div class="col-md-3">
+                    <img src="assets\images\Turrbidity.png" width="90%" height="100%">
+                </div>
+    
+                <div class="col-md-3">
+                    <img src="assets\images\PH.png" width="90%" height="100%">
+                </div>
+            </div>
+            &nbsp;
+    
+            <!--ROW 2-->
+            <div class="row">
+                <div class="col-md-4">
+                    <img *ngIf="!islandSelected" src="assets\images\mapduplicate.png" width="100%" height="94%">
+                    <img *ngIf="islandSelected" src="assets\images\Map.png" width="100%" height="94%">
+                </div>
+    
+                <div class="col-md-4">
+                    <img src="assets\images\chart.png" width="95%">
+                </div>
+    
+                <div class="col-md-4">
+                    <img src="assets\images\weather chart.jpg" width="95%">
+                </div>
+            </div>
+            <!--ROW 3-->
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="assets\images\productflowrate.jpeg" width="99%" height="100%">
+                </div>
+                <div class="col-md-9">
+                    <img src="assets\images\product chart.jpeg" width="98%" height="100%">
+                </div>
+            </div>
+            <!--Message-->
+            <div>
+                <p> Message: System Status Good and Healthy</p>
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+        
